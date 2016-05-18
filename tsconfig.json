@@ -2,11 +2,17 @@
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
-        "sourceMap": true
+        "sourceMap": true,
+        "outDir": "build"
     },
     "files": [
         "./typings/main.d.ts",
         "./utl.ts",
         "./app.ts"
-    ]
+    ],
+    "exclude": [
+       "node_modules"
+     ],
+
+    "buildOnSave": true
 }
